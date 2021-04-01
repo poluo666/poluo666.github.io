@@ -59,6 +59,15 @@
 	        
 			</ul>
 		</nav>
+	
+<nav>
+<h5>总文章数<h/> 4
+</nav>
+
+
+
+
+
 		<nav class="header-smart-menu">
     		
     			
@@ -152,6 +161,77 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-yilia主题配置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/04/01/yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/">yilia主题配置</a>
+    </h1>
+  
+
+        
+        <a href="/2021/04/01/yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/" class="archive-article-date">
+  	<time datetime="2021-04-01T14:30:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-01</time>
+</a>
+        
+      </header>
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1、左侧显示总文章数<br>打开 themes/yilia/layout/_partial/left-col.ejs 文件<br>在：<nav class="header-menu"></p>
+<ul>
+<% for (var i in theme.menu){ %>
+<li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+<%}%>
+</ul>
+</nav>
+后面添加：
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/04/01/yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-资源网站" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -169,6 +249,7 @@
 </a>
         
       </header>
+
     
     <div class="article-entry" itemprop="articleBody">
       
@@ -232,6 +313,7 @@
 </a>
         
       </header>
+
     
     <div class="article-entry" itemprop="articleBody">
       
@@ -295,6 +377,7 @@
 </a>
         
       </header>
+
     
     <div class="article-entry" itemprop="articleBody">
       
@@ -302,8 +385,6 @@
 
 <p>.启动数据库服务：net start mysql<br>.关闭数据库服务：net stop mysql</p>
 <p>数据库操作：<br>1.创建数据库：Create database 数据库名<br>2.选择数据库：use 数据库名</p>
-        
-          <a class="article-more-a" href="/2021/03/31/sql%E5%91%BD%E4%BB%A4/#more">more >></a>
         
       
 
@@ -517,9 +598,28 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
+
+
+
+
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap">
+				<div style="display:;">
+					<script type="text/javascript" src="https://api.lwl12.com/hitokoto/v1?encode=js&charset=utf-8"></script>
+					<p style="margin:0 20px 0 20px;">
+						<span id="lwlhitokoto">
+							<script>
+								lwlhitokoto();
+							</script>
+						</span>
+					</p>
+					<p id="js-aboutme" style="margin:0 20px 0 20px;">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</P>
+				</div>
+			</div>
   	  	
+
+
+
     	</section>
     
   </div>
