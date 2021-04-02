@@ -43,7 +43,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/img/下载.png" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/"></a></h1>
@@ -110,7 +110,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/img/下载.png" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author"></h1>
@@ -182,15 +182,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1、左侧显示总文章数<br>打开 themes/yilia/layout/_partial/left-col.ejs 文件<br>在：<nav class="header-menu"></p>
-<ul>
-<% for (var i in theme.menu){ %>
-<li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
-<%}%>
-</ul>
-</nav>
-后面添加：
-        
+        <p>1.文章折叠<br>需要折叠的内容后面添加：&lt;!– more –&gt;</p>
+<p>在文章需要截断的地方添加more即可将文章截成两段，前面的在标签内显示，后面的只有点开全文的时候才能显示。</p>
+<p>去掉 标签界面中 more 按钮：进入theme目录，打开yilia目录下的 _config.yml 文件，修改 excerpt_link： 修改之后的more单词换成空格</p>
+
       
 
       
@@ -599,28 +594,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
 
+	  
+<div class="aboutme-wrap" id="js-aboutme">
+	很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家
+</div>
 
 
 
-  	  	
-  	  		<div class="aboutme-wrap">
-				<div style="display:;">
-					<script type="text/javascript" src="https://api.lwl12.com/hitokoto/v1?encode=js&charset=utf-8"></script>
-					<p style="margin:0 20px 0 20px;">
-						<span id="lwlhitokoto">
-							<script>
-								lwlhitokoto();
-							</script>
-						</span>
-					</p>
-					<p id="js-aboutme" style="margin:0 20px 0 20px;">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</P>
-				</div>
-			</div>
-  	  	
-
-
-
-    	</section>
+  	  	</section>
     
   </div>
   
